@@ -1,8 +1,4 @@
-const China = 'Китай';
-const Chile = 'Чили';
-const Australia = 'Австралию';
-const India = 'Индию';
-const Jamaica = 'Ямайку';
+let country;
 const priceChina = 100;
 const priceChile = 250;
 const priceAustralia = 170;
@@ -15,28 +11,34 @@ const normalizeUserImput = UserInput.toLowerCase();
 console.log(normalizeUserImput);
 
 switch (normalizeUserImput) {
+  
     case 'китай':
-    message = `Доставка в ${China} будет стоить ${priceChina} кредитов`;
+    country = 'Китай';
+    message = `Доставка в ${country} будет стоить ${priceChina} кредитов`;
     alert(message);
     break;
-
+  
   case 'чили':
-    message = `Доставка в ${Chile} будет стоить ${priceChile} кредитов`;
+    country = 'Чили';
+    message = `Доставка в ${country} будет стоить ${priceChile} кредитов`;
     alert(message);
     break;
-
+    
   case 'австралия':
-    message = `Доставка в ${Australia} будет стоить ${priceAustralia} кредитов`;
+    country = 'Австралию';
+    message = `Доставка в ${country} будет стоить ${priceAustralia} кредитов`;
     alert(message);
     break;
-
+    
   case 'индия':
-    message = `Доставка в ${India} будет стоить ${priceAustralia} кредитов`;
+    country = 'Индию';
+    message = `Доставка в ${country} будет стоить ${priceAustralia} кредитов`;
     alert(message);
     break;
-
+    
   case 'ямайка':
-    message = `Доставка в ${Jamaica} будет стоить ${priceJamaica} кредитов`;
+    country = 'Ямайку';
+    message = `Доставка в ${country} будет стоить ${priceJamaica} кредитов`;
     alert(message);
     break;
 
