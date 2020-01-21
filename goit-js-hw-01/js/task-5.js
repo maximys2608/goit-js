@@ -1,49 +1,31 @@
 let country;
-const priceChina = 100;
-const priceChile = 250;
-const priceAustralia = 170;
-const priceIndia = 80;
-const priceJamaica = 120;
-let message;
+let price;
 
 const UserInput = prompt('Введи свою страну');
-const normalizeUserImput = UserInput.toLowerCase();
-console.log(normalizeUserImput);
-
-switch (normalizeUserImput) {
-  
-    case 'китай':
+switch (UserInput.toLowerCase()) {
+  case 'китай':
     country = 'Китай';
-    message = `Доставка в ${country} будет стоить ${priceChina} кредитов`;
-    alert(message);
+    price = 100;
     break;
-  
   case 'чили':
     country = 'Чили';
-    message = `Доставка в ${country} будет стоить ${priceChile} кредитов`;
-    alert(message);
+    price = 250;
     break;
-    
   case 'австралия':
     country = 'Австралию';
-    message = `Доставка в ${country} будет стоить ${priceAustralia} кредитов`;
-    alert(message);
+    price = 170;
     break;
-    
   case 'индия':
     country = 'Индию';
-    message = `Доставка в ${country} будет стоить ${priceAustralia} кредитов`;
-    alert(message);
+    price = 80;
     break;
-    
   case 'ямайка':
     country = 'Ямайку';
-    message = `Доставка в ${country} будет стоить ${priceJamaica} кредитов`;
-    alert(message);
+    price = 120;
     break;
-
-    default:
-    message = 'В вашей стране доставка не доступна';
-    alert(message);
+  default:
+    alert('В вашей стране доставка не доступна');
 }
+const message = `Доставка в ${country} будет стоить ${price} кредитов`;
+if(country && country.length) alert(message);
 
